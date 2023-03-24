@@ -1,0 +1,39 @@
+body{
+    background-image: #000;
+    background-size: 100%;
+}
+.content{
+    min-height: calc(100vh - 64px - 70px);
+    box-sizing: border-box;
+}
+#search{
+    width: 7in;
+}
+.films{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+}
+#load{
+    border: 1px solid black;
+    margin: 40px auto;
+    width: 50%;
+    height: 13px;
+    border-radius: 5px;
+}
+#load2{
+    width: 0%;
+    height: 13px;
+    border-radius: 5px;
+    animation: load 12s linear infinite;
+    background-color: darkcyan;
+}
+@keyframes load{
+    100%{
+        width: 100%;
+    }
+}
